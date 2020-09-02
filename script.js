@@ -22,13 +22,18 @@ function generatePassword(onclick="generateBtn") {
 //options for pass word types to include (lowercase, uppercase, numeric, and/or special characters)
 
 //  "Click okay to include special characters" (okay and cancel options, use boolean?)
-var specialCharacters = confirm("Click OK to confirm including special characters.");
+var specialCharacters = "!@#$%^&*()_?<>";
+var confirmCharacters = confirm("Click OK to confirm including special characters.");
 //  "Click okay to include numbers" (okay and cancel options, use boolean?)
-var includeNumbers = confirm("Click OK to confirm including numbers.");
+var numbers = "1234567890"
+var confirmNumbers = confirm("Click OK to confirm including numbers.");
 //  "Click okay to include uppercase letters" (okay and cancel options, use boolean?)
-var uppercaseLetters = confirm("Click OK to confirm including uppercase letters.");
+var uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var confirmUppercaseLetters = confirm("Click OK to confirm including uppercase letters.");
 //  "Click okay to include lowercase letters"(okay and cancel options, use boolean?)
-var lowercaseLetters = confirm("Click OK to confirm including lowercase letters.");
+var lowercaseLetters = "abcdefghijklmnopqrstuvwxyz"
+var confirmlowercaseLetters = confirm("Click OK to confirm including lowercase letters.");
+
 
 
 //pass word generated and displays in generate password box 
@@ -37,6 +42,18 @@ var lowercaseLetters = confirm("Click OK to confirm including lowercase letters.
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+// something like this for random key gen
+
+// function makeid(length) {
+//    var result           = '';
+//    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+//    var charactersLength = characters.length;
+//    for ( var i = 0; i < length; i++ ) {
+//       result += characters.charAt(Math.floor(Math.random() * charactersLength));
+//    }
+//    return result;
+// }
 
 
 
