@@ -70,13 +70,15 @@ function generatePassword() {
       return "";
     }
 
-    
+    for (var i = 0; i < passwordLength; i++) {
+      var randomCharacter = Math.floor(Math.random() * password.length);
+      finalPassword = finalPassword + password[randomCharacter];
     }
 
     return finalPassword;
   }
 }
-// Add event listener to generate button
+// generate button
 generateBtn.addEventListener("click", writePassword);
 
 
