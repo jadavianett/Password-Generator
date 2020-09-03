@@ -11,7 +11,7 @@ In order to achieve this, I first pseudo coded the project to include all of the
 I organized these elements by generally listing my variables first and then my if/else statements. Comments are throughout the code to describe what each chunk of code is executing. 
 
 ## Challenges
-This was a difficult assignment for me. To be completely transparent, I was quite stumped after pseudo coding and adding in my variables.Thankfully, my tutor was able to help me think through the remainder of the processes. One challenge to working through with a tutor was forgetting to commit along the way! I will definitely be sure to commit early and commit often on the next assignment. 
+This was a difficult assignment for me. To be completely transparent, I was quite stumped after pseudo coding and adding in my variables.Thankfully, my tutor was able to help me think through the remainder of the processes. One challenge to working through with a tutor was forgetting to commit along the way! I will definitely be sure to commit early and commit often moving forward. 
 
 ## Links 
 Link to GitHub Repository: https://github.com/jadavianett/password-generator
