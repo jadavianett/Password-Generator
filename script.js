@@ -70,13 +70,9 @@ function generatePassword() {
       return "";
     }
 
-    for (var i = 0; i < passwordLength; i++) {
-      var randomCharacter = Math.floor(Math.random() * password.length);
-      finalPassword = finalPassword + password[randomCharacter];
+    
     }
 
-    //pass word generated and displays in generate password box
-    // TODo: generate a real password and replace return string with a real password string
     return finalPassword;
   }
 }
