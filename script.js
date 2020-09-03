@@ -66,15 +66,14 @@ function generatePassword() {
       alert("Please select at least one option.");
       return "";
     }
-//for loop that selects a random number and multiplies it by the password length to generate the final password 
+    //for loop that selects a random number and multiplies it by the password length to generate the final password
     for (var i = 0; i < passwordLength; i++) {
       var randomCharacter = Math.floor(Math.random() * password.length);
       finalPassword = finalPassword + password[randomCharacter];
     }
-//finally, the finalPassword is displayed
+    //finally, the finalPassword is displayed
     return finalPassword;
   }
 }
 // generate button
 generateBtn.addEventListener("click", writePassword);
-
