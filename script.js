@@ -1,6 +1,4 @@
-
 var generateBtn = document.querySelector("#generate");
-
 
 function writePassword() {
   var password = generatePassword();
@@ -15,14 +13,16 @@ function generatePassword() {
   var passwordLength = prompt(
     "How many characters would you like your password to contain? Enter a number between 8 and 128."
   );
- //final password will be displayed at the end and pulls information from password
+  //final password will be displayed at the end and pulls information from password
   var finalPassword = "";
 
   //first if condition must be met for the rest of the program to run - if not, an alert will prompt the user to enter a number within the specified criteria
   if (passwordLength < 8 || passwordLength > 128) {
+    //initial prompt
     alert("Please select a number between 8 and 128.");
     generatePassword();
   } else {
+    //secondary confirms
     var specialCharacters = "!@#$%^&*()_?<>";
     var confirmCharacters = confirm(
       "Click OK to confirm including special characters."
@@ -30,16 +30,18 @@ function generatePassword() {
 
     var numbers = "1234567890";
     var confirmNumbers = confirm("Click OK to confirm including numbers.");
-    //  "Click okay to include uppercase letters" (okay and cancel options, use boolean?)
+
     var uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     var confirmUppercaseLetters = confirm(
       "Click OK to confirm including uppercase letters."
     );
-    //  "Click okay to include lowercase letters"(okay and cancel options, use boolean?)
+
     var lowercaseLetters = "abcdefghijklmnopqrstuvwxyz";
     var confirmLowercaseLetters = confirm(
       "Click OK to confirm including lowercase letters."
     );
+
+    //the following if statements provide the information to fill the empty password string with the required information
     if (confirmCharacters == true) {
       password = password + specialCharacters;
     }
@@ -54,6 +56,7 @@ function generatePassword() {
       password = password + lowercaseLetters;
     }
 
+    // this conditional displays an alert if the user selects false for each conditional, therefore adding no information to the blank password string, returns a blank final password string to the user
     if (
       confirmCharacters == false &&
       confirmNumbers == false &&
@@ -63,24 +66,15 @@ function generatePassword() {
       alert("Please select at least one option.");
       return "";
     }
-
+//for loop that selects a random number and multiplies it by the password length to generate the final password 
     for (var i = 0; i < passwordLength; i++) {
       var randomCharacter = Math.floor(Math.random() * password.length);
       finalPassword = finalPassword + password[randomCharacter];
     }
-
+//finally, the finalPassword is displayed
     return finalPassword;
   }
 }
 // generate button
 generateBtn.addEventListener("click", writePassword);
-
-// options for pass word length (at least 8 characters and no more than 128 characters)
-
-  // prompt("How many characters would you like your password to contain? Enter a value between 8 and 128.")
-
-  //options for pass word types to include (lowercase, uppercase, numeric, and/or special characters)
-
-  //  "Click okay to include special characters" (okay and cancel options, use boolean?)
-
 
