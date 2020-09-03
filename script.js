@@ -1,7 +1,7 @@
-// Assignment Code
+
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
+
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -10,21 +10,15 @@ function writePassword() {
 }
 
 function generatePassword() {
+  // variable password holds anything added from specialCharacters, numbers, uppercaseLetters, and lowercaseLetters
   var password = "";
   var passwordLength = prompt(
     "How many characters would you like your password to contain? Enter a number between 8 and 128."
   );
-
-  // options for pass word length (at least 8 characters and no more than 128 characters)
-
-  // prompt("How many characters would you like your password to contain? Enter a value between 8 and 128.")
-
-  //options for pass word types to include (lowercase, uppercase, numeric, and/or special characters)
-
-  //  "Click okay to include special characters" (okay and cancel options, use boolean?)
-
+ //final password will be displayed at the end and pulls information from password
   var finalPassword = "";
 
+  //first if condition must be met for the rest of the program to run - if not, an alert will prompt the user to enter a number within the specified criteria
   if (passwordLength < 8 || passwordLength > 128) {
     alert("Please select a number between 8 and 128.");
     generatePassword();
@@ -33,7 +27,7 @@ function generatePassword() {
     var confirmCharacters = confirm(
       "Click OK to confirm including special characters."
     );
-    //  "Click okay to include numbers" (okay and cancel options, use boolean?)
+
     var numbers = "1234567890";
     var confirmNumbers = confirm("Click OK to confirm including numbers.");
     //  "Click okay to include uppercase letters" (okay and cancel options, use boolean?)
@@ -80,5 +74,13 @@ function generatePassword() {
 }
 // generate button
 generateBtn.addEventListener("click", writePassword);
+
+// options for pass word length (at least 8 characters and no more than 128 characters)
+
+  // prompt("How many characters would you like your password to contain? Enter a value between 8 and 128.")
+
+  //options for pass word types to include (lowercase, uppercase, numeric, and/or special characters)
+
+  //  "Click okay to include special characters" (okay and cancel options, use boolean?)
 
 
