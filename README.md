@@ -14,7 +14,7 @@ I organized these elements by generally listing my variables first and then my i
 This was a difficult assignment for me. To be completely transparent, I was quite stumped after pseudo coding and adding in my variables.Thankfully, my tutor was able to help me think through the remainder of the processes. One challenge to working through with a tutor was forgetting to commit along the way! I will definitely be sure to commit early and commit often on the next assignment. 
 
 ## Links 
-Link to GitHub Repository:
-Link to deployed application:
-![alt text](./Assets/Images/screenshot.png "Password generator")
+Link to GitHub Repository: https://github.com/jadavianett/password-generator
+Link to deployed application: https://jadavianett.github.io/password-generator/
+![alt text](home.png "Password generator")
 
