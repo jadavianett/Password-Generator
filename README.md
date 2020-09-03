@@ -16,4 +16,5 @@ This was a difficult assignment for me. To be completely transparent, I was quit
 ## Links 
 Link to GitHub Repository:
 Link to deployed application:
+![alt text](./Assets/Images/screenshot.png "Password generator")
 
